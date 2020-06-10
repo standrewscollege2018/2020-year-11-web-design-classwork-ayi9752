@@ -1,0 +1,20 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 20px;
+  padding-top: 30px;
+  background-color: blue;
+}
+.right {
+  background-color: purple;
+  margin-left: 100px;
+}
+
+* {
+  background-color:
+}
