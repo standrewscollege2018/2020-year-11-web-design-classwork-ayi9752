@@ -1,0 +1,64 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body{
+  background-image: url(imagine/triangles-1430105.png);
+  background-size: cover;
+  }
+.signup-form{
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background-color: inherit;
+  position: absolute;
+  padding: 50px;
+  margin-left: 500px;
+  margin-top: 100px;
+
+  overflow: hidden;
+  border-radius: 5px;
+}
+.signup-form img {
+  width:  50%;
+  height: 50%;
+}
+.signup-form input{
+  display: block;
+  width: 100%;
+  padding-left: 10px;
+  height:44px;
+  box-sizing: border-box;
+}
+.txt{
+  margin: 20px 0px;
+  border-radius: 5px;
+}
+.btn{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: blue;
+  color: white;
+  border-radius: 40px;
+  margin-top: 20px;
+  height:50px;
+  width:300px;
+	cursor: pointer;
+	transition: 0.8s;
+}
+
+.btn:hover{
+	transform: scale(0.96);
+}
+
+.signup-form a{
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding: 10px;
+  transition: 0.8s;
+}
+.signup-form a:hover{
+  background: black;
+  color: white;
+}

@@ -4,6 +4,7 @@
 
 <?php
  include("dbconnect.php");
+ include("narbar.php");
 if (!isset($_POST['search'])) {
     header("location:search.php");
 }
