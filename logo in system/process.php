@@ -10,7 +10,7 @@
       echo "Please fill in the blanks";
       }
 
-      if ($Password!=$CPassword) {
+      elseif ($Password!=$CPassword) {
       echo "Password Not Match";
       }
 
