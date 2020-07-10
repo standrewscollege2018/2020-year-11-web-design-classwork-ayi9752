@@ -15,13 +15,11 @@
     $TutorGroupID = $_GET['TutorGroupID'];
     $tutor_sql = "SELECT * FROM student WHERE TutorGroupID=$TutorGroupID";
     $tutor_qry = mysqli_query($dbconnect, $tutor_sql);
-
     $tutor_aa = mysqli_fetch_assoc($tutor_qry);
 
     do {
       $FirstName = $tutor_aa['FirstName'];
       echo $FirstName;
-
     } while ($tutor_aa = mysqli_fetch_assoc($tutor_qry))
 
      ?>

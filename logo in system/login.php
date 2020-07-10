@@ -12,7 +12,6 @@
         <input type="text" placeholder="User Name or Email" class="txt"name="UserName">
         <input type="password" placeholder="Password" class="txt"name="Password">
         <button name="btn-save" type="submit" class="btn">login</button>
-
       </form>
 
     </div>

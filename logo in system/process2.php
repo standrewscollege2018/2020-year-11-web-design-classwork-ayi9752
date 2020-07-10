@@ -1,5 +1,6 @@
 <?php
   include("dbconnect.php");
+  session_start();
   if (isset($_POST['btn-save'])) {
     $UName = $_POST['UserName'];
     $Pass = $_POST['Password'];
@@ -10,10 +11,11 @@
       $query = "select * from users where UName = '$UName'";
       $result =mysqli_query($dbconnect,$query);
 
-      if ($row=mysqli_fetch_assoc($result)) {
-        $db_password = $row['Password'];
+      if ($get = mysqli_fetch_assoc($result)) {
+        $db_password = $get ['Password'];
 
-      if (md5($Pass)== $db_password) {
+      if (md5($Pass) == $db_password) {
+          $_SESSION['user'] = $_POST['UserName'];
           header("location:admin.php");
         }
       else {
